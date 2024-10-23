@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/IV_logo_login"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo_levy_removebg" />
+
+    <TextView
+        android:id="@+id/TV_login_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IV_logo_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:letterSpacing="0.1"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/primary"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_login_login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="@color/primary"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        app:hintTextColor="@color/primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ET_username_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@color/primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_password"
+        android:layout_width="match_parent"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TIL_username"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        app:passwordToggleTint="@color/primary"
+        android:layout_marginRight="30dp"
+        android:textColorHint="@color/primary"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/primary"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ET_Password_login"
+            android:layout_width="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@color/primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BTN_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TIL_password"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/button_design"
+        android:text="Log in"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/primary" />
+
+    <TextView
+        android:id="@+id/TV_forgetPassword_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BTN_login_login"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password"
+        android:textColor="@color/primary"
+        android:textSize="11sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BTN_register_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_forgetPassword_login"
+        android:textStyle="bold"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="90dp"
+        android:background="@drawable/button_design"
+        android:text="Register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/primary" />
+
+
+</RelativeLayout>

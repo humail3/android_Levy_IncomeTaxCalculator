@@ -1,0 +1,32 @@
+<!-- menu_item_layout.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Define your menu items here -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BTN_logout_menuItemLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textStyle="bold"
+        android:background="@drawable/button_design"
+        android:text="Logout"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BTN_records_menuItemLayout"
+        android:layout_width="wrap_content"
+        android:textColor="@color/primary"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textStyle="bold"
+        android:background="@drawable/button_design"
+        android:layout_height="wrap_content"
+        android:text="Records"/>
+
+    <!-- Add more items as needed -->
+
+</LinearLayout>

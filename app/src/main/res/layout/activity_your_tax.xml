@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".YourTaxActivity">
+
+    <ImageView
+        android:id="@+id/IV_logo_yourTax"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo_levy_removebg" />
+
+    <TextView
+        android:id="@+id/TV_YourTaxIs_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IV_logo_yourTax"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:letterSpacing="0.1"
+        android:text="Your Tax is"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/primary"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/TV_income_yourTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Income: XXX"
+        android:layout_below="@+id/TV_YourTaxIs_login"
+        android:layout_marginLeft="30dp"
+        android:padding="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/primary"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/TV_income_yourTax"
+        android:background="@color/primary"/>
+
+
+    <TextView
+        android:id="@+id/TV_payableTax_yourTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tax Payable: XXX"
+        android:layout_below="@+id/TV_income_yourTax"
+        android:layout_marginLeft="30dp"
+        android:padding="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/primary"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/TV_payableTax_yourTax"
+        android:background="@color/primary"/>
+
+
+    <TextView
+        android:id="@+id/TV_healthEducationCess_yourTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Health and Education Cess: XXX"
+        android:layout_below="@+id/TV_payableTax_yourTax"
+        android:layout_marginLeft="30dp"
+        android:padding="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/primary"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/TV_healthEducationCess_yourTax"
+        android:background="@color/primary"/>
+
+
+    <TextView
+        android:id="@+id/TV_surcharge_yourTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Surcharge: 0"
+        android:layout_below="@+id/TV_healthEducationCess_yourTax"
+        android:layout_marginLeft="30dp"
+        android:padding="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/primary"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/TV_surcharge_yourTax"
+        android:background="@color/primary"/>
+
+
+    <TextView
+        android:id="@+id/TV_totalPayableTax_yourTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Payable Tax XXX"
+        android:layout_below="@+id/TV_surcharge_yourTax"
+        android:layout_marginLeft="30dp"
+        android:padding="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/primary"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/TV_totalPayableTax_yourTax"
+        android:background="@color/primary"/>
+
+
+    <TextView
+        android:id="@+id/TV_date_yourTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: DD/MM/YYYY"
+        android:layout_below="@+id/TV_totalPayableTax_yourTax"
+        android:layout_marginLeft="30dp"
+        android:padding="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/primary"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/TV_date_yourTax"
+        android:background="@color/primary"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BTN_save_yourTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_date_yourTax"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="90dp"
+        android:background="@drawable/button_design"
+        android:text="Save"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/primary"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

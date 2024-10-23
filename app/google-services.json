@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1019480541740",
+    "project_id": "levy-a9893",
+    "storage_bucket": "levy-a9893.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019480541740:android:18f46f3c8c9f1011069f89",
+        "android_client_info": {
+          "package_name": "com.novahumail.levy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6BSlpc0iJELAy7GEwbhCWEsKA3zbOUAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
